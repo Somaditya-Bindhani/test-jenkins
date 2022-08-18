@@ -1,1 +1,11 @@
-Added jenkins file 
+pipeline{
+    agent any 
+    stage {
+        stage("Hello"){
+            echo "This is Hello Stage."
+        }
+        stage("build"){
+            echo "This is build Stage."
+        }
+    }
+}
